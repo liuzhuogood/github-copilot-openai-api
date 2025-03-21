@@ -110,7 +110,7 @@ curl http://localhost:8000/v1/chat/completions \
 1. Visit http://localhost:8000/auth/device
 2. Follow the GitHub device authentication flow
 3. Once authorized, the service will automatically use the GitHub Copilot token
-
+![img.png](img.png)
 ---
 
 <a name="中文"></a>
