@@ -14,7 +14,7 @@ from auth.device_auth import DeviceAuth
 
 app = FastAPI(title="GitHub Copilot API")
 
-DEFAULT_API_KEY=""
+DEFAULT_API_KEY = ""
 
 # 设置模板
 templates = Jinja2Templates(directory="templates")
@@ -22,30 +22,32 @@ templates = Jinja2Templates(directory="templates")
 # 静态文件
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
+
 @app.get("/", response_class=HTMLResponse)
 async def root():
     """重定向到设备认证页面"""
     return RedirectResponse(url="/auth/device")
+
 
 @app.get("/auth/device", response_class=HTMLResponse)
 async def device_auth(request: Request):
     """设备认证页面"""
     auth = DeviceAuth()
     auth_info = await auth.new_get_token()
-    
+
     if "error" in auth_info:
         return HTMLResponse(content=f"<h1>错误</h1><p>{auth_info['error']}</p>")
-    
+
     return templates.TemplateResponse(
-        "auth.html", 
+        "auth.html",
         {
-            "request": request, 
+            "request": request,
             "user_code": auth_info["user_code"],
             "verification_uri": auth_info["verification_uri"],
             "device_code": auth_info["device_code"]
         }
     )
-      
+
 
 @app.post("/auth/confirm/{device_code}")
 async def confirm_auth(device_code: str):
@@ -53,6 +55,7 @@ async def confirm_auth(device_code: str):
     auth = DeviceAuth()
     result = await auth.confirm_token(device_code)
     return JSONResponse(content=result)
+
 
 @app.post("/v1/chat/completions")
 async def chat_completions(request: Request):
@@ -62,11 +65,11 @@ async def chat_completions(request: Request):
         # 校验header
         headers = request.headers
         api_key = headers.get("Authorization")
-        server_auth_key=os.getenv("API_KEY",DEFAULT_API_KEY)
+        server_auth_key = os.getenv("API_KEY", DEFAULT_API_KEY)
         if server_auth_key:
             if not api_key:
                 return {"error": {"message": "invalid token", "type": "invalid_request_error"}}, 401
-            if api_key != server_auth_key:
+            if api_key != 'Bearer ' + server_auth_key:
                 return {"error": {"message": "invalid token", "type": "invalid_request_error"}}, 401
 
         data = await request.json()
@@ -147,6 +150,6 @@ async def models():
 
 if __name__ == "__main__":
     host = os.getenv("HOST", "0.0.0.0")
-    port = os.getenv("PORT", 8000)
+    port = int(os.getenv("PORT", 8000))
     logger.debug(f"Starting server on http://{host}:{port}")
     uvicorn.run(app, host=host, port=port)

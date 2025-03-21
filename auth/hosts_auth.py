@@ -29,8 +29,12 @@ class HostsAuth(Auth):
     def _get_hosts_file_path(self) -> str:
         """获取 hosts.json 文件路径"""
         if os.name == 'nt':  # Windows
+            if not os.path.exists(os.path.expandvars("%LOCALAPPDATA%\\Local\\github-copilot")):
+                os.makedirs(os.path.expandvars("%LOCALAPPDATA%\\Local\\github-copilot"), exist_ok=True)
             return os.path.expandvars(r"%APPDATA%\Local\github-copilot\hosts.json")
         else:  # Unix-like
+            if not os.path.exists(os.path.expanduser("~/.config/github-copilot")):
+                os.makedirs(os.path.expanduser("~/.config/github-copilot"), exist_ok=True)
             return os.path.expanduser("~/.config/github-copilot/hosts.json")
 
     def save_token(self, oauth_token: str):
