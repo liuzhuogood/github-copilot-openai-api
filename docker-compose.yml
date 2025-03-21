@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8000
+      # 可选：设置API密钥
+      # - API_KEY=your_api_key_here
+    restart: unless-stopped
+    volumes:
+      # 保存认证信息的卷，避免重启后需要重新认证
+      - auth_data:/app/auth_data
+
+volumes:
+  auth_data: 
