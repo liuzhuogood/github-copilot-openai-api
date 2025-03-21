@@ -194,4 +194,5 @@ curl http://localhost:8000/v1/chat/completions \
 ### 🔐 首次使用
 1. 访问 http://localhost:8000/auth/device
 2. 按照 GitHub 设备认证流程进行操作
-3. 认证成功后，服务将自动使用 GitHub Copilot 令牌 
+3. 认证成功后，服务将自动使用 GitHub Copilot 令牌
+![img.png](img.png)
