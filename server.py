@@ -4,6 +4,7 @@ import os
 import uvicorn
 from fastapi import FastAPI
 from loguru import logger
+from starlette.middleware.cors import CORSMiddleware
 from starlette.requests import Request
 from starlette.responses import StreamingResponse, HTMLResponse, RedirectResponse, JSONResponse
 from fastapi.templating import Jinja2Templates
@@ -21,6 +22,14 @@ templates = Jinja2Templates(directory="templates")
 
 # 静态文件
 app.mount("/static", StaticFiles(directory="static"), name="static")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # 允许所有来源
+    allow_credentials=True,
+    allow_methods=["*"],  # 允许所有 HTTP 方法，包括 OPTIONS
+    allow_headers=["*"],  # 允许所有请求头
+)
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -73,6 +82,9 @@ async def chat_completions(request: Request):
                 return {"error": {"message": "invalid token", "type": "invalid_request_error"}}, 401
 
         data = await request.json()
+        if data.get("model", '') == 'gpt-4o-mini':
+            data["model"] = 'claude-3.5-sonnet'
+
         messages = data.get("messages", [])
         stream = data.get("stream", False)
         if not messages:
