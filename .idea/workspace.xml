@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3d0b2018-9532-42b5-a0c5-628cbed3735f" name="Changes" comment="feat: add CORS middleware and update model handling in server.py">
+      <change afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;liuzhuogood&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/liuzhuogood/github-copilot-openai-api.git&quot;,
+    &quot;accountId&quot;: &quot;26f41594-da2b-4557-b879-7aaca2a5ec2a&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2ud9jorvT7ZcIRIdy4pUztYe5Eo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.server.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/liuzhuo/code/github-copilot-openai-api",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/api" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="github-copilot-openai-api" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.server" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PY-243.26053.29" />
+        <option value="bundled-python-sdk-b1dbf8ef85a6-4df51de95216-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.26053.29" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3d0b2018-9532-42b5-a0c5-628cbed3735f" name="Changes" comment="" />
+      <created>1742567721694</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742567721694</updated>
+      <workItem from="1742567722840" duration="11289000" />
+      <workItem from="1743345563789" duration="593000" />
+    </task>
+    <task id="LOCAL-00001" summary="fix: correct textContent assignment and improve directory creation for hosts.json">
+      <option name="closed" value="true" />
+      <created>1742575647841</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742575647841</updated>
+    </task>
+    <task id="LOCAL-00002" summary="docs: update README to include image reference for GitHub Copilot authentication">
+      <option name="closed" value="true" />
+      <created>1742576352970</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742576352970</updated>
+    </task>
+    <task id="LOCAL-00003" summary="docs: update README to include image reference for GitHub Copilot authentication">
+      <option name="closed" value="true" />
+      <created>1742576515909</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1742576515909</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: add CORS middleware and update model handling in server.py">
+      <option name="closed" value="true" />
+      <created>1742890232159</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1742890232160</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix: correct textContent assignment and improve directory creation for hosts.json" />
+    <MESSAGE value="docs: update README to include image reference for GitHub Copilot authentication" />
+    <MESSAGE value="feat: add CORS middleware and update model handling in server.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add CORS middleware and update model handling in server.py" />
+  </component>
+  <component name="ai.zencoder.plugin.chat.state">
+    <option name="activeChatId" value="90a7c118-7f3f-48fc-984f-6e26439d9c8a" />
+    <option name="chatSessions" value="{&quot;b9df28d4-753e-430c-832d-38900c91a192&quot;:{&quot;id&quot;:&quot;b9df28d4-753e-430c-832d-38900c91a192&quot;,&quot;createdAt&quot;:1742890581071,&quot;updatedAt&quot;:1742890581071,&quot;title&quot;:&quot;Build project info&quot;,&quot;messages&quot;:[{&quot;id&quot;:&quot;5a8e2373-304c-4301-8688-e6fc84679941&quot;,&quot;role&quot;:&quot;user&quot;,&quot;content&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;Build project info&quot;}],&quot;createdAt&quot;:1742890581071,&quot;isInternal&quot;:false,&quot;rawContent&quot;:{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;Build project info&quot;}}],&quot;isCustomAgent&quot;:true,&quot;selfDestruct&quot;:true},&quot;70f310b6-dad3-454a-a5f5-8048ebb97fe6&quot;:{&quot;id&quot;:&quot;70f310b6-dad3-454a-a5f5-8048ebb97fe6&quot;,&quot;createdAt&quot;:1742890892071,&quot;updatedAt&quot;:1742890892071,&quot;title&quot;:&quot;Build project info&quot;,&quot;messages&quot;:[{&quot;id&quot;:&quot;48988235-c93b-4cb8-8300-05b350efb452&quot;,&quot;role&quot;:&quot;user&quot;,&quot;content&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;Build project info&quot;}],&quot;createdAt&quot;:1742890892071,&quot;isInternal&quot;:false,&quot;rawContent&quot;:{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;Build project info&quot;}}],&quot;isCustomAgent&quot;:true,&quot;selfDestruct&quot;:true},&quot;90a7c118-7f3f-48fc-984f-6e26439d9c8a&quot;:{&quot;id&quot;:&quot;90a7c118-7f3f-48fc-984f-6e26439d9c8a&quot;,&quot;createdAt&quot;:1742892681851,&quot;updatedAt&quot;:1742892681852,&quot;title&quot;:&quot;Build project info&quot;,&quot;messages&quot;:[{&quot;id&quot;:&quot;ca4bec14-da38-447e-99f5-e98639319d6f&quot;,&quot;role&quot;:&quot;user&quot;,&quot;content&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;Build project info&quot;}],&quot;createdAt&quot;:1742892681851,&quot;isInternal&quot;:false,&quot;rawContent&quot;:{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;Build project info&quot;}}],&quot;isCustomAgent&quot;:true,&quot;selfDestruct&quot;:true}}" />
+  </component>
+  <component name="ai.zencoder.plugin.rag.settings">
+    <option name="desiredChunkSizeBytes" value="5242880" />
+    <option name="forbiddenExtensions">
+      <set>
+        <option value=".log,.lock,.svg" />
+      </set>
+    </option>
+    <option name="pollingIntervalMs" value="60000" />
+    <option name="repoIndexingIntervalMs" value="300000" />
+  </component>
+  <component name="ai.zencoder.plugin.rag.state">
+    <option name="indexedFilesMap">
+      <map>
+        <entry key="$PROJECT_DIR$/.dockerignore" value="1742571804954" />
+        <entry key="$PROJECT_DIR$/Dockerfile" value="1742572104273" />
+        <entry key="$PROJECT_DIR$/README.md" value="1742576603022" />
+        <entry key="$PROJECT_DIR$/api/__init__.py" value="1742568202991" />
+        <entry key="$PROJECT_DIR$/api/chat_api.py" value="1742571203319" />
+        <entry key="$PROJECT_DIR$/api/chat_stream.py" value="1742570904680" />
+        <entry key="$PROJECT_DIR$/auth/__init__.py" value="1742568505818" />
+        <entry key="$PROJECT_DIR$/auth/device_auth.py" value="1742570602932" />
+        <entry key="$PROJECT_DIR$/auth/envs_auth.py" value="1742568505818" />
+        <entry key="$PROJECT_DIR$/auth/hosts_auth.py" value="1742575103764" />
+        <entry key="$PROJECT_DIR$/build.sh" value="1742892679351" />
+        <entry key="$PROJECT_DIR$/docker-compose.yml" value="1742571804954" />
+        <entry key="$PROJECT_DIR$/pyproject.toml" value="1742570602932" />
+        <entry key="$PROJECT_DIR$/server.py" value="1742890278977" />
+        <entry key="$PROJECT_DIR$/templates/auth.html" value="1742574205483" />
+      </map>
+    </option>
+    <option name="lastCommitHash" value="1742892681850" />
+    <option name="lastIndexTimestamp" value="1742892679351" />
+    <option name="repoTotalFiles" value="2" />
+    <option name="repositoryId" value="838ef48b-2421-4f98-89b6-096420266a26" />
+    <option name="state" value="FULLY_INDEXED" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/github_copilot_openai_api$server.coverage" NAME="server Coverage Results" MODIFIED="1742890204240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
